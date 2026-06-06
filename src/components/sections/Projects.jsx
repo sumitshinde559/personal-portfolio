@@ -5,7 +5,7 @@ const projects = [
     title: "ACT Cabs: Driver Portal",
     description:
       "Improved the Driver Account Management Portal by architecting custom PHP modules within WordPress to streamline earnings reports, documentation uploads, and real-time dispatch data sync.",
-    image: "/src/projects/actcabs.png",
+    image: "/actcabs.png",
     tags: ["WordPress", "PHP", "MySQL"],
     link: "https://www.actcabs.com.au/",
     github: "#",
@@ -14,7 +14,7 @@ const projects = [
     title: "Bucket Biryani Kolhapur",
     description:
       "Designed and developed a modern, responsive website for Bucket Biryani Kolhapur to strengthen its digital presence and showcase its menu, brand story, location, and promotions. Built using React and Tailwind CSS, with AI-assisted development workflows using Claude Code to accelerate development and improve productivity.",
-    image: "/src/projects/bucket-biryani-kolhapur.png",
+    image: "/bucket-biryani-kolhapur.png",
     tags: ["React", "Tailwind CSS", "Claude Code", "Responsive Design"],
     link: "https://bucketbiryanikolhapur.com",
     github: "#",
@@ -23,7 +23,7 @@ const projects = [
     title: "VU: Planetary Health Callback",
     description:
       "Developed a callback request portal for Victoria University's Graduate Certificate in Planetary Health program. Implemented dynamic UTM tracking, campaign source attribution, and webhook integrations to automatically route callback requests to the appropriate teams, ensuring accurate lead tracking and streamlined student enquiry management.",
-    image: "/src/projects/VU-CallBack-Landing_Page.png",
+    image: "/VU-CallBack-Landing_Page.png",
     tags: ["Webhook Integration", "UTM Tracking", "Lead Management"],
     link: "https://study.vu.edu.au/requestcallback?course=VTPH",
     github: "#",
@@ -32,7 +32,7 @@ const projects = [
     title: "MeetUp Event Platform",
     description:
       "Developed a full-stack event platform Meetup clone - primary features clone using React, Node.js, and Express. The application enables users to discover events, view detailed event information, and interact through a modern, responsive interface. Built with a focus on clean architecture, seamless user experience, and scalable frontend-backend integration.",
-    image: "/src/projects/meetup-platform.png",
+    image: "/meetup-platform.png",
     tags: ["React", "Node.js", "Express.js", "Tailwind CSS", "Vercel"],
     link: "https://meetup-frontend-react.vercel.app/",
     github: "#",
