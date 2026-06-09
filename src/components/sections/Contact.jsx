@@ -6,6 +6,7 @@ import {
   CheckCircle,
   AlertCircle,
 } from "lucide-react";
+
 import { Button } from "@/components/Buttons/Button";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -14,14 +15,14 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "sumit@example.com",
-    href: "mailto:sumit@example.com",
+    value: "sumitshinde559@gmail.com",
+    href: "mailto:sumitshinde559@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+91 xxxxxxxxxx",
-    href: "tel:+91xxxxxxxxxx",
+    value: "+91 8877446363",
+    href: "tel:+918877446363",
   },
   {
     icon: MapPin,

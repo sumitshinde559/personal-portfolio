@@ -1,9 +1,19 @@
-import { GitCompare, Link, Repeat2, Heart } from "lucide-react";
+import { Phone } from "lucide-react";
+import {
+  SiGithub,
+  SiGmail,
+  SiReact,
+  SiTailwindcss,
+} from "@icons-pack/react-simple-icons";
 
 const socialLinks = [
-  { icon: GitCompare, href: "#", label: "GitHub" },
-  { icon: Link, href: "#", label: "LinkedIn" },
-  { icon: Repeat2, href: "#", label: "Twitter" },
+  {
+    icon: SiGithub,
+    href: "https://github.com/sumitshinde559",
+    label: "GitHub",
+  },
+  { icon: Phone, href: "tel:+918877446363", label: "Phone" },
+  { icon: SiGmail, href: "mailto:sumitshinde559@gmail.com", label: "Email" },
 ];
 
 const footerLinks = [
@@ -44,7 +54,7 @@ export const Footer = () => {
           </nav>
 
           {/* Social Links */}
-          <div className="flex items-center gap-4">
+          <div className="py-16 flex items-center gap-4">
             {socialLinks.map((social) => (
               <a
                 key={social.label}
@@ -57,6 +67,9 @@ export const Footer = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="flex flex-col md:flex-row items-center justify-center gap-2 text-xs text-muted-foreground hover:text-foreground transition-colors">
+        Made with <SiReact /> and <SiTailwindcss />
       </div>
     </footer>
   );

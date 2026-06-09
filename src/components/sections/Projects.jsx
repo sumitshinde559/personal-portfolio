@@ -1,33 +1,34 @@
 import { ArrowUpRight, GitCompare } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/Buttons/AnimatedBorderButton";
 const projects = [
-  {
-    title: "ACT Cabs: Driver Portal",
-    description:
-      "Improved the Driver Account Management Portal by architecting custom PHP modules within WordPress to streamline earnings reports, documentation uploads, and real-time dispatch data sync.",
-    image: "/actcabs.png",
-    tags: ["WordPress", "PHP", "MySQL"],
-    link: "https://www.actcabs.com.au/",
-    github: "#",
-  },
+  // {
+  //   title: "ACT Cabs: Driver Portal",
+  //   description:
+  //     "Improved the Driver Account Management Portal by architecting custom PHP modules within WordPress to streamline earnings reports, documentation uploads, and real-time dispatch data sync.",
+  //   image: "/actcabs.png",
+  //   tags: ["WordPress", "PHP", "MySQL"],
+  //   link: "https://www.actcabs.com.au/",
+  //   github: "#",
+  // },
   {
     title: "Bucket Biryani Kolhapur",
     description:
-      "Designed and developed a modern, responsive website for Bucket Biryani Kolhapur to strengthen its digital presence and showcase its menu, brand story, location, and promotions. Built using React and Tailwind CSS, with AI-assisted development workflows using Claude Code to accelerate development and improve productivity.",
+      "Designed and developed a modern, responsive website for Bucket Biryani Kolhapur to strengthen its digital presence and showcase its menu, brand story, location, and imagery. Built using HTML and Tailwind CSS, with AI-assisted development using Gemini to accelerate development and improve productivity.",
     image: "/bucket-biryani-kolhapur.png",
-    tags: ["React", "Tailwind CSS", "Claude Code", "Responsive Design"],
+    tags: ["HTML", "Tailwind CSS", "Gemini", "Responsive Design"],
     link: "https://bucketbiryanikolhapur.com",
-    github: "#",
+    github: "https://github.com/sumitshinde559/bucket-biryani-kolhapur-website",
   },
-  {
-    title: "VU: Planetary Health Callback",
-    description:
-      "Developed a callback request portal for Victoria University's Graduate Certificate in Planetary Health program. Implemented dynamic UTM tracking, campaign source attribution, and webhook integrations to automatically route callback requests to the appropriate teams, ensuring accurate lead tracking and streamlined student enquiry management.",
-    image: "/VU-CallBack-Landing_Page.png",
-    tags: ["Webhook Integration", "UTM Tracking", "Lead Management"],
-    link: "https://study.vu.edu.au/requestcallback?course=VTPH",
-    github: "#",
-  },
+  // {
+  //   title: "VU: Planetary Health Callback",
+  //   description:
+  //     "Developed a callback request landing page for Victoria University's Graduate Certificate in Planetary Health program. Implemented dynamic UTM tracking, campaign source attribution, and webhook integrations to automatically route callback requests to the appropriate teams, ensuring accurate lead tracking and streamlined student enquiry management.",
+  //   image: "/VU-CallBack-Landing_Page.png",
+  //   tags: ["Webhook Integration", "UTM Tracking", "Lead Management"],
+  //   link: "https://study.vu.edu.au/requestcallback?course=VTPH",
+  //   github:
+  //     "https://github.com/sumitshinde559/VU-Request-A-Callback-Landing-Page",
+  // },
   {
     title: "MeetUp Event Platform",
     description:
@@ -35,7 +36,7 @@ const projects = [
     image: "/meetup-platform.png",
     tags: ["React", "Node.js", "Express.js", "Tailwind CSS", "Vercel"],
     link: "https://meetup-frontend-react.vercel.app/",
-    github: "#",
+    github: "https://github.com/sumitshinde559/meetup-frontend-react/",
   },
 ];
 
@@ -105,7 +106,7 @@ export const Projects = () => {
               <div className="p-6 space-y-4">
                 <div className="flex items-start justify-between">
                   <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
-                    {project.title}
+                    <a href={project.link}>{project.title}</a>
                   </h3>
                   <ArrowUpRight
                     className="w-5 h-5 
@@ -135,7 +136,7 @@ export const Projects = () => {
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
           <a
-            href="https://github.com/sumitshinde559"
+            href="https://github.com/sumitshinde559?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
           >

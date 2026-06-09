@@ -5,10 +5,16 @@ import {
   ArrowRight,
   ChevronDown,
   GitCompare,
-  Link,
+  Phone,
   Repeat2,
   Download,
 } from "lucide-react";
+
+import {
+  SiGithub,
+  SiFacebook,
+  SiInstagram,
+} from "@icons-pack/react-simple-icons";
 
 import { AnimatedBorderButton } from "@/components/Buttons/AnimatedBorderButton";
 
@@ -97,22 +103,28 @@ export const Hero = () => {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
+              <a href="#contact">
+                <Button size="lg">
+                  Contact Me
+                  <ArrowRight className="w-5 h-5" />
+                </Button>
+              </a>
+              <a
+                href="https://docs.google.com/document/d/1jBJgeqNnas_kzB-7cSFVzZnupXT8Gwuh/edit?usp=sharing&ouid=118246126470524645423&rtpof=true&sd=true"
+                target="_blank"
+              >
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: GitCompare, href: "#" },
-                { icon: Link, href: "#" },
-                { icon: Repeat2, href: "#" },
+                { icon: SiGithub, href: "https://github.com/sumitshinde559" },
               ].map((social, index) => (
                 <a
                   key={index}
