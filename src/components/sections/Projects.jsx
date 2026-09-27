@@ -1,15 +1,15 @@
 import { ArrowUpRight, GitCompare } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/Buttons/AnimatedBorderButton";
 const projects = [
-  // {
-  //   title: "ACT Cabs: Driver Portal",
-  //   description:
-  //     "Improved the Driver Account Management Portal by architecting custom PHP modules within WordPress to streamline earnings reports, documentation uploads, and real-time dispatch data sync.",
-  //   image: "/actcabs.png",
-  //   tags: ["WordPress", "PHP", "MySQL"],
-  //   link: "https://www.actcabs.com.au/",
-  //   github: "#",
-  // },
+  {
+    title: "ACT Cabs: Driver Portal",
+    description:
+      "Improved the Driver Account Management Portal by architecting custom PHP modules within WordPress to streamline earnings reports, documentation uploads, and real-time dispatch data sync.",
+    image: "/actcabs.png",
+    tags: ["WordPress", "PHP", "MySQL"],
+    link: "https://www.actcabs.com.au/",
+    github: "#",
+  },
   {
     title: "Bucket Biryani Kolhapur",
     description:
@@ -19,16 +19,15 @@ const projects = [
     link: "https://bucketbiryanikolhapur.com",
     github: "https://github.com/sumitshinde559/bucket-biryani-kolhapur-website",
   },
-  // {
-  //   title: "VU: Planetary Health Callback",
-  //   description:
-  //     "Developed a callback request landing page for Victoria University's Graduate Certificate in Planetary Health program. Implemented dynamic UTM tracking, campaign source attribution, and webhook integrations to automatically route callback requests to the appropriate teams, ensuring accurate lead tracking and streamlined student enquiry management.",
-  //   image: "/VU-CallBack-Landing_Page.png",
-  //   tags: ["Webhook Integration", "UTM Tracking", "Lead Management"],
-  //   link: "https://study.vu.edu.au/requestcallback?course=VTPH",
-  //   github:
-  //     "https://github.com/sumitshinde559/VU-Request-A-Callback-Landing-Page",
-  // },
+  {
+    title: "Kovhar: Kolhapuri Footwear E-Commerce",
+    description:
+      "Designed and developed a full-stack MERN e-commerce platform for handcrafted Kolhapuri chappals. Built a responsive React frontend with category-based browsing for Men, Women, Kids, and curated Collections, along with product search, wishlist, shopping cart, and user account features. Developed a Node.js and Express REST API backed by MongoDB to manage products, users, and orders, with secure authentication and a clean, scalable architecture. Deployed on Vercel with a premium, brand-focused UI that celebrates traditional craftsmanship.",
+    image: "/Kovhar.png",
+    tags: ["React", "Node.js", "Express", "MongoDB", "REST API", "Vercel"],
+    link: "https://kovhar-frontend.vercel.app",
+    github: "https://github.com/sumitshinde559/your-repo-name",
+  },
   {
     title: "MeetUp Event Platform",
     description:

@@ -49,41 +49,39 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a Marketing Automation Specialist, CRM Marketer, and Web
-                Developer with over 4 years of experience creating data-driven
-                customer journeys that drive engagement, lead nurturing, and
-                business growth. My passion lies in combining marketing
-                strategy, automation, technology, and modern web development to
-                deliver personalised customer experiences and digital solutions
-                that create real business impact.
+                I'm a Full-Stack Developer and Marketing Automation Specialist
+                with over 4 years of experience building the technology that
+                powers data-driven customer journeys. I sit at the intersection
+                of engineering and marketing, combining clean, scalable code
+                with CRM and automation expertise to deliver digital products
+                and experiences that create real business impact.
               </p>
               <p>
-                I have hands-on experience with platforms such as Oracle Eloqua,
-                Zoho CRM, Salesforce, and a wide range of marketing
-                technologies, helping organisations streamline marketing
+                On the development side, I build end-to-end solutions across the
+                stack. I create responsive, user-focused interfaces with
+                React.js, JavaScript, HTML, and CSS, develop server-side logic
+                and APIs with Node.js, and design data layers using MySQL and
+                MongoDB. I manage my work with Git and build and customise
+                WordPress sites, taking projects from concept to deployment with
+                a focus on performance, maintainability, and seamless user
+                experience.
+              </p>
+              <p>
+                On the marketing technology side, I bring hands-on experience
+                with Oracle Eloqua, Salesforce, Zoho CRM, and a wide range of
+                MarTech tools. I've helped organisations streamline marketing
                 operations, improve campaign performance, and maximise customer
-                lifetime value. From email marketing and customer segmentation
-                to lead scoring and automated workflows, I focus on turning data
-                into meaningful customer interactions.
-              </p>
-              <p>
-                Alongside marketing automation, I have experience in web
-                development using HTML, CSS, JavaScript, React.js, Node.js,
-                WordPress, MySQL, MongoDB, Git, and modern frontend
-                technologies. I enjoy building responsive websites, web
-                applications, and digital experiences that combine strong
-                functionality with a seamless user experience.
+                lifetime value through email marketing, customer segmentation,
+                lead scoring, and automated workflows.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "I enjoy combining marketing, technology, and web development to
-                build solutions that improve customer engagement and business
-                performance. Whether it's automating customer journeys,
-                optimising CRM processes, or creating modern web experiences,
-                I'm driven by a passion for innovation, problem-solving, and
-                delivering measurable results."
+                "I build full-stack applications that don't just work, they
+                perform. From the first component to the final deployment, I
+                write clean, scalable code with a clear focus on the people
+                using it and the results it delivers."
               </p>
             </div>
           </div>

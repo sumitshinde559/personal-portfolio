@@ -1,7 +1,7 @@
 const experiences = [
   {
     period: "2024 — 2025",
-    role: "Marketing Automation Specialist & CRM Marketer",
+    role: "Developer Programmer",
     company: "Ameya Informatics",
     description:
       "Managing end-to-end marketing automation and CRM initiatives for higher education and business clients. Designed and deployed landing pages, lead capture forms, automated customer journeys, email campaigns, and CRM integrations using Oracle Eloqua, Salesforce, and custom web technologies. Collaborated with stakeholders to improve lead management processes, campaign performance, and customer engagement through data-driven marketing strategies.",

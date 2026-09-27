@@ -21,13 +21,13 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+91 8877446363",
-    href: "tel:+918877446363",
+    value: "+61 426876963",
+    href: "tel:+61426876963",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "Mumbai, MH",
+    value: "Melbourne, VIC",
     href: "#",
   },
 ];

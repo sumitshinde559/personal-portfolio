@@ -1,6 +1,6 @@
 import { Button } from "@/components/Buttons/Button";
 import heroBg from "@/assets/hero-bg.jpg";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import profilePhoto from "@/assets/profilephoto.jpg";
 import {
   ArrowRight,
   ChevronDown,
@@ -88,16 +88,19 @@ export const Hero = () => {
                 journeys with
                 <br />
                 <span className="font-serif italic font-normal text-white">
-                  intelligence.
+                  code and intelligence.
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Sumit Shinde — a Marketing Automation Specialist and CRM
-                Marketer passionate about creating personalised customer
-                experiences through data, automation, and strategic campaign
-                execution. I help businesses drive engagement, nurture leads,
-                and maximise customer lifetime value using platforms like
-                Eloqua, Salesforce, and modern marketing technologies.
+                Hi, I'm Sumit Shinde, a Full-Stack Developer and Marketing
+                Automation Specialist who builds the technology behind
+                personalised customer experiences. I combine hands-on
+                engineering with CRM and campaign expertise to design, develop,
+                and ship end-to-end solutions, from scalable web applications
+                and APIs to automated lifecycle programs in Eloqua and
+                Salesforce. I help businesses turn data into engagement, nurture
+                leads with smarter systems, and maximise customer lifetime value
+                through technology built to perform.
               </p>
             </div>
 
@@ -110,7 +113,7 @@ export const Hero = () => {
                 </Button>
               </a>
               <a
-                href="https://docs.google.com/document/d/1jBJgeqNnas_kzB-7cSFVzZnupXT8Gwuh/edit?usp=sharing&ouid=118246126470524645423&rtpof=true&sd=true"
+                href="https://drive.google.com/file/d/1GZ6sEMH6GcUhN6cAO-83tbA7NWsdJ5rl/view?usp=drive_link"
                 target="_blank"
               >
                 <AnimatedBorderButton>
