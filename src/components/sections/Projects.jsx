@@ -26,7 +26,7 @@ const projects = [
     image: "/Kovhar.png",
     tags: ["React", "Node.js", "Express", "MongoDB", "REST API", "Vercel"],
     link: "https://kovhar-frontend.vercel.app",
-    github: "https://github.com/sumitshinde559/your-repo-name",
+    github: "https://github.com/sumitshinde559/kovhar-frontend",
   },
   {
     title: "MeetUp Event Platform",
