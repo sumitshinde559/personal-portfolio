@@ -12,7 +12,7 @@ const socialLinks = [
     href: "https://github.com/sumitshinde559",
     label: "GitHub",
   },
-  { icon: Phone, href: "tel:+918877446363", label: "Phone" },
+  { icon: Phone, href: "tel:+61426876963", label: "Phone" },
   { icon: SiGmail, href: "mailto:sumitshinde559@gmail.com", label: "Email" },
 ];
 
