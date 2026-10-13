@@ -5,7 +5,7 @@ const projects = [
     title: "ACT Cabs: Driver Portal",
     description:
       "Improved the Driver Account Management Portal by architecting custom PHP modules within WordPress to streamline earnings reports, documentation uploads, and real-time dispatch data sync.",
-    image: "/actcabs.png",
+    image: "/actcabs.webp",
     tags: ["WordPress", "PHP", "MySQL"],
     link: "https://www.actcabs.com.au/",
     github: "#",
@@ -14,7 +14,7 @@ const projects = [
     title: "Bucket Biryani Kolhapur",
     description:
       "Designed and developed a modern, responsive website for Bucket Biryani Kolhapur to strengthen its digital presence and showcase its menu, brand story, location, and imagery. Built using HTML and Tailwind CSS, with AI-assisted development using Gemini to accelerate development and improve productivity.",
-    image: "/bucket-biryani-kolhapur.png",
+    image: "/bucket-biryani-kolhapur.webp",
     tags: ["HTML", "Tailwind CSS", "Gemini", "Responsive Design"],
     link: "https://bucketbiryanikolhapur.com",
     github: "https://github.com/sumitshinde559/bucket-biryani-kolhapur-website",
@@ -23,7 +23,7 @@ const projects = [
     title: "Kovhar: Kolhapuri Footwear E-Commerce",
     description:
       "Designed and developed a full-stack MERN e-commerce platform for handcrafted Kolhapuri chappals. Built a responsive React frontend with category-based browsing for Men, Women, Kids, and curated Collections, along with product search, wishlist, shopping cart, and user account features. Developed a Node.js and Express REST API backed by MongoDB to manage products, users, and orders, with secure authentication and a clean, scalable architecture. Deployed on Vercel with a premium, brand-focused UI that celebrates traditional craftsmanship.",
-    image: "/Kovhar.png",
+    image: "/Kovhar.webp",
     tags: ["React", "Node.js", "Express", "MongoDB", "REST API", "Vercel"],
     link: "https://kovhar-frontend.vercel.app",
     github: "https://github.com/sumitshinde559/kovhar-frontend",
@@ -32,7 +32,7 @@ const projects = [
     title: "MeetUp Event Platform",
     description:
       "Developed a full-stack event platform Meetup clone - primary features clone using React, Node.js, and Express. The application enables users to discover events, view detailed event information, and interact through a modern, responsive interface. Built with a focus on clean architecture, seamless user experience, and scalable frontend-backend integration.",
-    image: "/meetup-platform.png",
+    image: "/meetup-platform.webp",
     tags: ["React", "Node.js", "Express.js", "Tailwind CSS", "Vercel"],
     link: "https://meetup-frontend-react.vercel.app/",
     github: "https://github.com/sumitshinde559/meetup-frontend-react/",
