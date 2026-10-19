@@ -1,6 +1,6 @@
 import { Button } from "@/components/Buttons/Button";
 import heroBg from "@/assets/hero-bg.jpg";
-import profilePhoto from "@/assets/profilephoto.jpg";
+import profilePhoto from "@/assets/profilephoto.webp";
 import { ArrowRight, ChevronDown, Download } from "lucide-react";
 
 import { SiGithub } from "@icons-pack/react-simple-icons";

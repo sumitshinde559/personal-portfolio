@@ -75,7 +75,7 @@ export const Contact = () => {
       setSubmitStatus({
         type: "error",
         message:
-          err.text || "Failed to send message. Please try again later.",
+          err?.text || "Failed to send message. Please try again later.",
       });
     } finally {
       setIsLoading(false);
