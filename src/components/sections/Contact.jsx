@@ -223,8 +223,10 @@ export const Contact = () => {
               </div>
               <p className="text-muted-foreground text-sm">
                 I'm currently open to new opportunities and exciting projects.
-                Whether you need a full-time engineer or a freelance consultant,
-                let's talk!
+                Based in Melbourne and open to roles in Sydney, Brisbane, Perth,
+                Adelaide, Canberra, Gold Coast, Hobart and Darwin, or remote
+                anywhere in Australia. Whether you need a full-time engineer or
+                a freelance consultant, let's talk!
               </p>
             </div>
           </div>
