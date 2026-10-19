@@ -111,15 +111,17 @@ export const Hero = () => {
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </a>
-              <a
-                href="/Sumit-Shinde-CV.pdf"
-                download="Sumit-Shinde-CV.pdf"
-              >
-                <AnimatedBorderButton>
-                  <Download className="w-5 h-5" />
-                  Download CV
-                </AnimatedBorderButton>
-              </a>
+              {[
+                { file: "Sumit-Shinde-MarTech-CV.pdf", label: "MarTech CV" },
+                { file: "Sumit-Shinde-Web-Developer-CV.pdf", label: "Web Developer CV" },
+              ].map((cv) => (
+                <a key={cv.file} href={`/${cv.file}`} download={cv.file}>
+                  <AnimatedBorderButton>
+                    <Download className="w-5 h-5" />
+                    {cv.label}
+                  </AnimatedBorderButton>
+                </a>
+              ))}
             </div>
 
             {/* Social Links */}
