@@ -3,13 +3,12 @@ import { AnimatedBorderButton } from "@/components/Buttons/AnimatedBorderButton"
 import { TechList } from "@/components/TechList";
 const projects = [
   {
-    title: "ACT Cabs: Driver Portal",
+    title: "ACT Cabs: Taxi Operator Portal",
     description:
-      "Improved the Driver Account Management Portal by architecting custom PHP modules within WordPress to streamline earnings reports, documentation uploads, and real-time dispatch data sync.",
+      "Built from scratch after gathering requirements from the admins: an operator account portal with custom PHP modules in WordPress that streamline earnings reports, documentation uploads and real-time dispatch data sync.",
     image: "/screenshots/portalactcabs.com.au.jpg",
-    tags: ["WordPress", "PHP", "MySQL"],
+    tags: ["WordPress", "PHP", "MySQL", "Bootstrap", "jQuery"],
     link: "https://portalactcabs.com.au",
-    github: "#",
   },
   {
     title: "Bucket Biryani Kolhapur",
@@ -21,22 +20,20 @@ const projects = [
     github: "https://github.com/sumitshinde559/bucket-biryani-kolhapur-website",
   },
   {
-    title: "Kovhar: Kolhapuri Footwear E-Commerce",
+    title: "Indian Diecast Expo",
     description:
-      "Designed and developed a full-stack MERN e-commerce platform for handcrafted Kolhapuri chappals. Built a responsive React frontend with category-based browsing for Men, Women, Kids, and curated Collections, along with product search, wishlist, shopping cart, and user account features. Developed a Node.js and Express REST API backed by MongoDB to manage products, users, and orders, with secure authentication and a clean, scalable architecture. Deployed on Vercel with a premium, brand-focused UI that celebrates traditional craftsmanship.",
-    image: "/screenshots/kovhar-frontend.vercel.app.jpg",
-    tags: ["React", "Node.js", "Express", "MongoDB", "REST API", "Vercel"],
-    link: "https://kovhar-frontend.vercel.app",
-    github: "https://github.com/sumitshinde559/kovhar-frontend",
+      "Shopify store for India's diecast and scale-model expo in Mumbai, presenting event details, venue information and ticket sales for the Gala Dinner, Early Bird, General Entry and Private Dinner passes.",
+    image: "/screenshots/indiandiecastexpo.com.jpg",
+    tags: ["Shopify"],
+    link: "https://indiandiecastexpo.com",
   },
   {
-    title: "MeetUp Event Platform",
+    title: "Cadra Solutions: Survey CAD Drafting",
     description:
-      "Developed a full-stack event platform Meetup clone - primary features clone using React, Node.js, and Express. The application enables users to discover events, view detailed event information, and interact through a modern, responsive interface. Built with a focus on clean architecture, seamless user experience, and scalable frontend-backend integration.",
-    image: "/screenshots/meetup-frontend-react.vercel.app.jpg",
-    tags: ["React", "Node.js", "Express", "Tailwind CSS", "Vercel"],
-    link: "https://meetup-frontend-react.vercel.app/",
-    github: "https://github.com/sumitshinde559/meetup-frontend-react/",
+      "Service website for a survey CAD drafting firm serving US survey companies, presenting its drafting services, turnaround and confidential file handling, with free trial and quote requests.",
+    image: "/screenshots/cadrasolutions.com.jpg",
+    tags: ["HTML5", "Tailwind CSS", "Hostinger"],
+    link: "https://cadrasolutions.com",
   },
 ];
 
@@ -93,12 +90,15 @@ export const Projects = () => {
                   >
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
-                  <a
-                    href={project.github}
-                    className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
-                  >
-                    <GitCompare className="w-5 h-5" />
-                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      aria-label="Source code on GitHub"
+                      className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    >
+                      <GitCompare className="w-5 h-5" />
+                    </a>
+                  )}
                 </div>
               </div>
 
