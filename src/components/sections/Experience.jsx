@@ -1,6 +1,6 @@
 const experiences = [
   {
-    period: "2024 — 2025",
+    period: "2024 — 2026",
     role: "Developer Programmer",
     company: "Ameya Informatics",
     description:

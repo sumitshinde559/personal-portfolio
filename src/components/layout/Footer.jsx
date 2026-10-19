@@ -5,8 +5,14 @@ import {
   SiReact,
   SiTailwindcss,
 } from "@icons-pack/react-simple-icons";
+import { LinkedinIcon } from "@/components/LinkedinIcon";
 
 const socialLinks = [
+  {
+    icon: LinkedinIcon,
+    href: "https://www.linkedin.com/in/sumitshinde/",
+    label: "LinkedIn",
+  },
   {
     icon: SiGithub,
     href: "https://github.com/sumitshinde559",
@@ -17,10 +23,11 @@ const socialLinks = [
 ];
 
 const footerLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/projects.html", label: "Projects" },
+  { href: "/marketing.html", label: "Marketing Automation" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export const Footer = () => {
@@ -32,7 +39,7 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
-            <a href="#" className="text-xl font-bold tracking-tight">
+            <a href="/" className="text-xl font-bold tracking-tight">
               Sumit S<span className="text-primary">.</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">

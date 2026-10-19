@@ -1,20 +1,10 @@
 import { Button } from "@/components/Buttons/Button";
 import heroBg from "@/assets/hero-bg.jpg";
 import profilePhoto from "@/assets/profilephoto.jpg";
-import {
-  ArrowRight,
-  ChevronDown,
-  GitCompare,
-  Phone,
-  Repeat2,
-  Download,
-} from "lucide-react";
+import { ArrowRight, ChevronDown, Download } from "lucide-react";
 
-import {
-  SiGithub,
-  SiFacebook,
-  SiInstagram,
-} from "@icons-pack/react-simple-icons";
+import { SiGithub } from "@icons-pack/react-simple-icons";
+import { LinkedinIcon } from "@/components/LinkedinIcon";
 
 import { AnimatedBorderButton } from "@/components/Buttons/AnimatedBorderButton";
 
@@ -22,6 +12,9 @@ const skills = [
   "html",
   "css",
   "Oracle Eloqua",
+  "Salesforce Marketing Cloud",
+  "Braze",
+  "Klaviyo",
   "Zoho Campaigns",
   "CRM Integration",
   "JavaScript",
@@ -34,6 +27,14 @@ const skills = [
   "Tailwind CSS",
   "Git",
 ];
+
+// Generated once at module load so render stays pure and dots don't jump on re-render.
+const dots = Array.from({ length: 30 }, () => ({
+  left: `${Math.random() * 100}%`,
+  top: `${Math.random() * 100}%`,
+  duration: 15 + Math.random() * 20,
+  delay: Math.random() * 5,
+}));
 
 export const Hero = () => {
   return (
@@ -50,18 +51,16 @@ export const Hero = () => {
 
       {/* Green Dots */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(30)].map((_, i) => (
+        {dots.map((dot, i) => (
           <div
             className="absolute w-1.5 h-1.5 rounded-full opacity-60"
             key={i}
             style={{
               backgroundColor: "#20B2A6",
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animation: `slow-drift ${
-                15 + Math.random() * 20
-              }s ease-in-out infinite`,
-              animationDelay: `${Math.random() * 5}s`,
+              left: dot.left,
+              top: dot.top,
+              animation: `slow-drift ${dot.duration}s ease-in-out infinite`,
+              animationDelay: `${dot.delay}s`,
             }}
           />
         ))}
@@ -97,8 +96,8 @@ export const Hero = () => {
                 personalised customer experiences. I combine hands-on
                 engineering with CRM and campaign expertise to design, develop,
                 and ship end-to-end solutions, from scalable web applications
-                and APIs to automated lifecycle programs in Eloqua and
-                Salesforce. I help businesses turn data into engagement, nurture
+                and APIs to automated lifecycle programs in Oracle Eloqua,
+                Salesforce Marketing Cloud (SFMC), Braze and Klaviyo. I help businesses turn data into engagement, nurture
                 leads with smarter systems, and maximise customer lifetime value
                 through technology built to perform.
               </p>
@@ -127,11 +126,15 @@ export const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: SiGithub, href: "https://github.com/sumitshinde559" },
+                { icon: LinkedinIcon, href: "https://www.linkedin.com/in/sumitshinde/", label: "LinkedIn" },
+                { icon: SiGithub, href: "https://github.com/sumitshinde559", label: "GitHub" },
               ].map((social, index) => (
                 <a
                   key={index}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
                   {<social.icon className="w-5 h-5" />}
@@ -140,7 +143,7 @@ export const Hero = () => {
             </div>
           </div>
           {/* Right Column - Profile Image */}
-          <div className="relatice animate-fade-in animation-delay-300">
+          <div className="relative animate-fade-in animation-delay-300">
             {/* Profile Image */}
             <div className="relative max-w-md mx-auto">
               <div

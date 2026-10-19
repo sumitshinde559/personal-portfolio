@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+# Close-copy rebuilds of client campaign assets: shown as previews only, not for search results.
+Disallow: /email-templates/
+Disallow: /landing-pages/
+
+Sitemap: https://sumitshinde.com.au/sitemap.xml

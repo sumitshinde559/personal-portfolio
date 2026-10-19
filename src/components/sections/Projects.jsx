@@ -1,21 +1,22 @@
 import { ArrowUpRight, GitCompare } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/Buttons/AnimatedBorderButton";
+import { TechList } from "@/components/TechList";
 const projects = [
   {
     title: "ACT Cabs: Driver Portal",
     description:
       "Improved the Driver Account Management Portal by architecting custom PHP modules within WordPress to streamline earnings reports, documentation uploads, and real-time dispatch data sync.",
-    image: "/actcabs.png",
+    image: "/screenshots/portalactcabs.com.au.jpg",
     tags: ["WordPress", "PHP", "MySQL"],
-    link: "https://www.actcabs.com.au/",
+    link: "https://portalactcabs.com.au",
     github: "#",
   },
   {
     title: "Bucket Biryani Kolhapur",
     description:
-      "Designed and developed a modern, responsive website for Bucket Biryani Kolhapur to strengthen its digital presence and showcase its menu, brand story, location, and imagery. Built using HTML and Tailwind CSS, with AI-assisted development using Gemini to accelerate development and improve productivity.",
-    image: "/bucket-biryani-kolhapur.png",
-    tags: ["HTML", "Tailwind CSS", "Gemini", "Responsive Design"],
+      "Designed and developed a modern, responsive website for Bucket Biryani Kolhapur to strengthen its digital presence and showcase its menu, brand story, location, and imagery. Built using HTML and Tailwind CSS.",
+    image: "/screenshots/bucketbiryanikolhapur.com.jpg",
+    tags: ["HTML5", "Tailwind CSS", "Responsive Design"],
     link: "https://bucketbiryanikolhapur.com",
     github: "https://github.com/sumitshinde559/bucket-biryani-kolhapur-website",
   },
@@ -23,7 +24,7 @@ const projects = [
     title: "Kovhar: Kolhapuri Footwear E-Commerce",
     description:
       "Designed and developed a full-stack MERN e-commerce platform for handcrafted Kolhapuri chappals. Built a responsive React frontend with category-based browsing for Men, Women, Kids, and curated Collections, along with product search, wishlist, shopping cart, and user account features. Developed a Node.js and Express REST API backed by MongoDB to manage products, users, and orders, with secure authentication and a clean, scalable architecture. Deployed on Vercel with a premium, brand-focused UI that celebrates traditional craftsmanship.",
-    image: "/Kovhar.png",
+    image: "/screenshots/kovhar-frontend.vercel.app.jpg",
     tags: ["React", "Node.js", "Express", "MongoDB", "REST API", "Vercel"],
     link: "https://kovhar-frontend.vercel.app",
     github: "https://github.com/sumitshinde559/kovhar-frontend",
@@ -32,8 +33,8 @@ const projects = [
     title: "MeetUp Event Platform",
     description:
       "Developed a full-stack event platform Meetup clone - primary features clone using React, Node.js, and Express. The application enables users to discover events, view detailed event information, and interact through a modern, responsive interface. Built with a focus on clean architecture, seamless user experience, and scalable frontend-backend integration.",
-    image: "/meetup-platform.png",
-    tags: ["React", "Node.js", "Express.js", "Tailwind CSS", "Vercel"],
+    image: "/screenshots/meetup-frontend-react.vercel.app.jpg",
+    tags: ["React", "Node.js", "Express", "Tailwind CSS", "Vercel"],
     link: "https://meetup-frontend-react.vercel.app/",
     github: "https://github.com/sumitshinde559/meetup-frontend-react/",
   },
@@ -93,7 +94,7 @@ export const Projects = () => {
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
                   <a
-                    href={project.gi}
+                    href={project.github}
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <GitCompare className="w-5 h-5" />
@@ -117,16 +118,7 @@ export const Projects = () => {
                 <p className="text-muted-foreground text-sm">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, tagIdx) => (
-                    <span
-                      key={tagIdx}
-                      className="px-4 py-1.5 rounded-full bg-surface text-xs font-medium border border-border/50 text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+                <TechList tech={project.tags} />
               </div>
             </div>
           ))}
@@ -134,11 +126,7 @@ export const Projects = () => {
 
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <a
-            href="https://github.com/sumitshinde559?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="/projects.html">
             <AnimatedBorderButton>
               View All Projects
               <ArrowUpRight className="w-5 h-5" />

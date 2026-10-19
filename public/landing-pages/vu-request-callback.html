@@ -1,0 +1,164 @@
+<!doctype html>
+<!-- Note: logos, photos and artwork replaced with similar placeholders to avoid copyright issues. Layout and code reflect the original build. -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a callback | Victoria University</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: "Source Sans 3", "Source Sans Pro", Arial, sans-serif; color: #222; background: #fff; }
+      .wrap { max-width: 1296px; margin: 0 auto; padding: 0 24px; }
+      header { padding: 40px 0; }
+      .logo { display: flex; align-items: center; gap: 8px; font-weight: 900; font-size: 26px; line-height: 24px; color: #000; text-decoration: none; }
+      .logo-mark { font-size: 48px; line-height: 1; }
+      .hero { position: relative; height: 400px; overflow: hidden; display: flex; align-items: center;
+        background: linear-gradient(100deg, #5a4638 0%, #8b6e57 35%, #b49a84 60%, #6d5848 100%); }
+      .hero::after { content: ""; position: absolute; right: 18%; top: 50%; width: 330px; height: 330px;
+        border: 48px solid #5bc2e7; transform: translateY(-50%) rotate(45deg); opacity: 0.95; }
+      .hero h1 { position: relative; z-index: 1; margin: 0; font-size: 60px; font-weight: 800; color: #fff; }
+      main { padding: 48px 0 56px; }
+      h2 { margin: 0 0 24px; font-size: 30px; font-weight: 700; }
+      p { margin: 0 0 16px; font-size: 17px; line-height: 1.5; }
+      h3 { margin: 40px 0 12px; font-size: 16px; font-weight: 700; }
+      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+      .field label { display: block; margin-bottom: 8px; font-size: 15px; }
+      input[type="text"], input[type="email"], input[type="tel"], select {
+        width: 100%; height: 46px; padding: 0 12px; border: 1px solid #8a8a8a; font: inherit; font-size: 15px; color: #222; background: #fff; }
+      ::placeholder { color: #767676; }
+      select { color: #767676; }
+      .consent { margin-top: 40px; }
+      .consent strong { display: block; margin-bottom: 16px; font-size: 16px; }
+      .radios { display: flex; gap: 20px; margin-bottom: 16px; font-size: 15px; }
+      .radios label { display: flex; align-items: center; gap: 8px; }
+      .radios input { width: 18px; height: 18px; margin: 0; }
+      .small { font-size: 15px; }
+      a { color: #0063be; }
+      button { margin-top: 24px; width: 200px; height: 52px; border: 0; border-radius: 3px; background: #f2665e; color: #1a1446; font: inherit; font-size: 20px; font-weight: 700; cursor: pointer; }
+      footer { background: #000; color: #fff; padding: 40px 0 64px; font-size: 13px; line-height: 1.6; }
+      footer .wrap { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+      footer a { color: #fff; }
+      .social { text-align: right; }
+      .social strong { display: block; margin-bottom: 16px; font-size: 12px; letter-spacing: 0.5px; }
+      .social a { margin-left: 16px; text-decoration: none; font-weight: 700; }
+      @media (max-width: 720px) {
+        .grid { grid-template-columns: 1fr; }
+        .hero { height: 260px; }
+        .hero h1 { font-size: 40px; }
+        .hero::after { width: 200px; height: 200px; border-width: 30px; right: -40px; }
+        .social { text-align: left; }
+        .social a { margin: 0 16px 0 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <a class="logo" href="https://www.vu.edu.au/">
+          <span class="logo-mark">&#9670;</span>
+          <span>VICTORIA<br />UNIVERSITY</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="wrap" style="width: 100%">
+        <h1>Request a callback</h1>
+      </div>
+    </section>
+
+    <main>
+      <div class="wrap">
+        <h2>Need some advice?</h2>
+        <p>Request a call back from one of our experienced course advisers to have your questions answered.</p>
+        <p>You can also subscribe to stay up to date with our latest news and tips for success.</p>
+
+        <form action="" method="post">
+          <input type="hidden" name="course" value="VTPH" />
+
+          <h3>My contact details</h3>
+          <div class="grid">
+            <input type="text" name="firstName" placeholder="Given name(s)*" aria-label="Given name(s)" required />
+            <input type="text" name="lastName" placeholder="Family name or surname*" aria-label="Family name or surname" required />
+            <input type="email" name="emailAddress" placeholder="Email address*" aria-label="Email address" required />
+            <input type="text" name="postcode" placeholder="Postcode*" aria-label="Postcode" inputmode="numeric" required />
+            <input type="tel" name="mobilePhone" placeholder="Mobile phone*" aria-label="Mobile phone" required />
+          </div>
+
+          <h3>About me</h3>
+          <!-- Picklist options come from the CRM. -->
+          <div class="grid">
+            <div class="field">
+              <label for="describesMe">What best describes me*</label>
+              <select id="describesMe" name="describesMe" required>
+                <option value="">Please select</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="studyLevel">I am interested in studying*</label>
+              <select id="studyLevel" name="studyLevel" required>
+                <option value="">Please select...</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="areaOfInterest">Area of Interest*</label>
+              <select id="areaOfInterest" name="areaOfInterest" required>
+                <option value="">Please select</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="startStudying">I would like to start studying*</label>
+              <select id="startStudying" name="startStudying" required>
+                <option value="">Please select</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="indigenous">Are you of Aboriginal and/or Torres Strait Islander descent?*</label>
+              <select id="indigenous" name="indigenous" required>
+                <option value="">Please select</option>
+                <option>Yes, Aboriginal</option>
+                <option>Yes, Torres Strait Islander</option>
+                <option>Yes, Aboriginal and Torres Strait Islander</option>
+                <option>No</option>
+                <option>Prefer not to say</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="consent">
+            <strong>I agree to receive marketing communications from Victoria University.</strong>
+            <div class="radios">
+              <label><input type="radio" name="marketingConsent" value="yes" required /> Yes</label>
+              <label><input type="radio" name="marketingConsent" value="no" /> No</label>
+            </div>
+            <p class="small">
+              Refer to our <a href="https://www.vu.edu.au/privacy">privacy policy and data collection notification statement</a> for more information.
+            </p>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <div>
+          <a href="https://www.vu.edu.au/">Visit the Victoria University site</a><br />
+          Copyright &copy; 2026<br />
+          Victoria University, CRICOS No. 00124K (Melbourne),<br />
+          02475D (Sydney and Brisbane), RTO 3113, TEQSA No. PRV12152
+        </div>
+        <div class="social">
+          <strong>CONNECT WITH US</strong>
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -68,8 +68,9 @@ export const About = () => {
               </p>
               <p>
                 On the marketing technology side, I bring hands-on experience
-                with Oracle Eloqua, Salesforce, Zoho CRM, and a wide range of
-                MarTech tools. I've helped organisations streamline marketing
+                operating Oracle Eloqua, Salesforce Marketing Cloud (SFMC),
+                Braze and Klaviyo, alongside Salesforce, Zoho CRM and a wide
+                range of MarTech tools. I've helped organisations streamline marketing
                 operations, improve campaign performance, and maximise customer
                 lifetime value through email marketing, customer segmentation,
                 lead scoring, and automated workflows.

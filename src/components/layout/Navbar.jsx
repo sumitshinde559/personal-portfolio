@@ -3,9 +3,10 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
+  { href: "/#about", label: "About" },
+  { href: "/projects.html", label: "Projects" },
+  { href: "/marketing.html", label: "Marketing Automation" },
+  { href: "/#experience", label: "Experience" },
 ];
 
 export const Navbar = () => {
@@ -30,14 +31,14 @@ export const Navbar = () => {
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a
-          href="#"
+          href="/"
           className="text-xl font-bold tracking-tight hover:text-primary"
         >
           Sumit S<span className="text-primary">.</span>
         </a>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-1">
           <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
             {navLinks.map((link, index) => (
               <a
@@ -52,15 +53,15 @@ export const Navbar = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="hidden md:block">
-          <a href="#contact">
+        <div className="hidden lg:block">
+          <a href="/#contact">
             <Button size="sm">Contact Me</Button>
           </a>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 text-foreground cursor-pointer"
+          className="lg:hidden p-2 text-foreground cursor-pointer"
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -69,7 +70,7 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden glass-strong animate-fade-in">
+        <div className="lg:hidden glass-strong animate-fade-in">
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link, index) => (
               <a
@@ -82,13 +83,9 @@ export const Navbar = () => {
               </a>
             ))}
 
-            <Button
-              onClick={() => {
-                setIsMobileMenuOpen(false);
-              }}
-            >
-              <a href="#contact">Contact Me</a>
-            </Button>
+            <a href="/#contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <Button className="w-full">Contact Me</Button>
+            </a>
           </div>
         </div>
       )}
