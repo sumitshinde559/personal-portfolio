@@ -112,8 +112,8 @@ export const Hero = () => {
                 </Button>
               </a>
               <a
-                href="https://drive.google.com/file/d/1GZ6sEMH6GcUhN6cAO-83tbA7NWsdJ5rl/view?usp=drive_link"
-                target="_blank"
+                href="/Sumit-Shinde-CV.pdf"
+                download="Sumit-Shinde-CV.pdf"
               >
                 <AnimatedBorderButton>
                   <Download className="w-5 h-5" />
